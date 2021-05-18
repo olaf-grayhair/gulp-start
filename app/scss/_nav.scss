@@ -1,0 +1,40 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    background-color: black;
+    position: relative;
+
+
+    .menu-burger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+
+        .logo {
+        }
+
+        .menu__item:not(:first-child){
+            margin-left: 15px;
+        }
+
+        .menu__link {
+            font-size: 22px;
+            color: #fff;
+            transition: all .5s ease;
+            &:hover{
+                color: yellow;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

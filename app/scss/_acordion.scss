@@ -1,0 +1,52 @@
+//*********Photostudioa************//
+.accordion{
+    margin: 0 auto;
+
+    p, h3, a{
+        color: white;
+    }
+
+    .accordion__block{
+        max-width: 400px;
+        border: 1px solid white;
+        position: relative;
+        margin: 20px auto;
+        background-color: black;
+        padding: 20px 10px;
+        .accordion__title{
+            cursor: pointer;
+        }
+        .accordion__button{
+            position: absolute;
+            top: 35px;
+            right: 20px;
+            background-color: white;
+            .accordion__item{
+                width: 30px;
+                height: 3px;
+                display: block;
+                position: relative;
+                &.active::after{
+                    transform: rotate(0deg);
+                }
+                &::after{
+                    transform: rotate(90deg);
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    content: '';
+                    width: 30px;
+                    height: 3px;
+                    background-color: white;
+                    transition: all .5s ease;  
+                }
+            }
+        }
+    }
+    .accordion__column{
+        margin-top: 20px;
+        display: none;
+    }
+
+}
+//*********Photostudioa************//

@@ -1,0 +1,30 @@
+.tabs {
+    max-width: 400px;
+    margin: 200px auto ;
+    .tabs__caption {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        li{
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+        }
+        li.active{
+            background-color: brown;
+            color: black;
+        }
+    }
+
+    .tabs__content.active {
+        display: block; 
+    }
+    .tabs__content {
+        display: none;
+    }
+    
+}
+

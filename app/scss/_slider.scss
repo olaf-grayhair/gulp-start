@@ -1,0 +1,38 @@
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    background-color: rgb(68, 187, 20);
+    .slider__item {
+    }
+}
+
+//*********DOTS-STYLE*********//
+.slider{
+    position: relative;
+}
+
+.header-dots{
+    position: absolute;
+    top: 242px;
+    left: 98.8%;
+    z-index: 2;
+}
+.header-dots button{
+    border: none;
+    background-color: #FFFFFF;
+    opacity: .5;
+    font-size: 0;
+    padding: 0%;
+    width: 7px;
+    height: 7px;
+    border-radius: 3.5px;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 10px auto;
+}
+.header-dots .slick-active button{
+    width: 15px;
+    opacity: 1;
+}
+//*********DOTS-STYLE*********//
